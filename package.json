@@ -1,0 +1,16 @@
+{
+	"name": "hi",
+	"version": "1.0.0",
+	"description": "on the hunt for minecraft diamonds",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"dependencies": {
+		"express": "4.17.1",
+		"nodemon": "2.0.2"
+	},
+	"engines": {
+		"node": ">=8.11.0"
+	},
+	"license": "MIT"
+}

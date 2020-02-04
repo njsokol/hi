@@ -1,0 +1,67 @@
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+#game-header {
+    background-color: #0689ff;
+    display: flex;
+    align-items: center;
+}
+  
+#game-score {
+    color: #FFF;
+    font-size: 2em;
+    margin-left: 1rem;
+    flex: 1;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+#game-start-stop-button {
+    flex: 1;
+    height: 3em;
+    line-height: 3em;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 10px;
+    color: #ff89ff;
+    background-color: #FFF;
+    max-width: 8em;
+    margin-right: 1rem;
+}
+
+#game-start-stop-button:hover {
+    color: #FFF;
+    background-color: #ff89ff;
+    cursor: pointer;
+}
+
+#game-speed {
+    background-color: #0689ff;
+}
+
+#game-speed-slider {
+    padding: 1em;
+    display: table;
+    margin: 0 auto;
+}
+
+#game-speed-slider input {
+    width: 200px;
+}
+
+#game-speed-slider label {
+    padding: 0 1em;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.game-dot {
+    background-color: #ff89ff;
+    border-radius: 50%;
+    position: absolute;
+}

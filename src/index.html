@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nathan Sokol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/css-reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <header id="game-header">
+    <div id="game-score">Score: <span id="total-score">0</span></div>
+    <div id="game-start-stop-button" onclick="startStopGame()">Start</div>
+  </header>
+  <header id="game-speed">
+    <div id="game-speed-slider">
+      <label>Slow</label>
+      <input type="range" list="tickmarks" min="10" max="100" step="10" value="10" onchange="changeGameSpeed(this.value)">
+      <datalist id="tickmarks">
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+      <label>Fast</label>
+    </div>
+  </header>
+  <script src="./index.js"></script>
+</body>
+</html>
