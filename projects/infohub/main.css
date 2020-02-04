@@ -1,0 +1,130 @@
+body {
+  font-family: 'Arvo', serif;
+}
+
+.aboutPageContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.workshopPageTitle {
+  color: #222;
+  font-size: 8em;
+  text-align: center;
+  padding: 0.3em 0 0.35em 0;
+}
+
+.workshopRole {
+  color: #888;
+  font-size: 2em;
+  text-align: center;
+  padding: 0.2em;
+}
+
+.workshopContent {
+  padding: 1em;
+}
+
+#workshopAboutImage {
+  float: left;
+  display: block;
+}
+
+.workshopAbout {
+  font-size: 30px;
+  margin: 130px 0 0 500px;
+  color: #B5b5b5;
+}
+
+.home-ss {
+	max-width: 1000px;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+	border-left: 2px solid #AAA;
+	border-right: 2px solid #AAA;
+}
+
+.ibm-way-ss {
+	max-width: 1000px;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.main-description {
+	background-color: #254b60;
+	color: #FFF;
+	padding-top: 2rem;
+}
+
+.main-description h1 {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 3em;
+}
+
+.main-description p {
+	max-width: 70%;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+
+.main-container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.transform-description {
+	background-color: #F7F7F7;
+	padding: 2rem 0;
+}
+
+.transform-description h1 {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 3em;
+}
+
+.transform-description p {
+	max-width: 70%;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+
+.footer {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 641px) {
+  .workshopPageTitle {
+    font-size: 3em;
+  }
+  .workshopRole {
+    font-size: 1em;
+  }
+  #workshopAboutImage {
+    width: 70%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .workshopAbout {
+    font-size: 1em;
+    width: 82%;
+    margin: 0 auto;
+    line-height: 1.2em;
+    clear: both;
+    padding-bottom: 1em;
+  }
+}

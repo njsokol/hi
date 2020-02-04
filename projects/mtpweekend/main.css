@@ -1,0 +1,261 @@
+body {
+	width: 100%;
+	background-color: #EFEFEF;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#homePageContainer {
+	width: 100%;
+	height: 100%;
+}
+#mtpweekend {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	position:relative;
+}
+
+#mtpweekend h1{
+	font-size: 5em;
+	color: #BBB;
+	font-weight: 200;
+	bottom:0;
+	width:100%;
+	position:absolute;
+	text-align:center;
+}
+
+#tent {
+	width: 100%;
+	height: 35%;
+}
+
+#tent img {
+	width: 30%;
+	max-width: 400px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#tileContainer {
+	width: 90%;
+	height: 45%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.tile {
+	width: 29%;
+	display: inline-block;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 1px 3px 5px #AAA;
+	margin: 2%;
+
+}
+.tile:hover {
+	transform: scale(1.1, 1.1);
+}
+.tile img {
+	width: 100%;
+	display: block;
+}
+.tile p {
+	margin: 0 auto;
+	padding: 1em 0;
+	color: #999;
+}
+#secondPage {
+	background-color: #39F;
+}
+#thirdPage {
+	background-color: #F44;
+}
+#fourthPage {
+	background-color: #EFEFEF;
+}
+#fourthPage h1 {
+	text-align: center;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.slideContentContainer {
+	width: 90%;
+	height: 100%;
+	max-width: 1200px;
+	margin: 5% auto;
+}
+.slideHeader {
+	font-size: 3em;
+	padding-bottom: 0.2em;
+}
+#secondPage .slideHeaderDate {
+	color: #EEE;
+	padding-left: 0.2em;
+}
+
+#frioAboutContainer {
+	width: 100%;
+	height: 70%;
+	margin-top: 1em;
+}
+#frioAbout {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	padding-top: 1em;
+}
+#frioAbout p {
+	width: 80%;
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+#frioAboutCampers { 
+	display: inline-block;
+	width: 50%;
+}
+.headshot_campers {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	margin: 2.5%;
+}
+.headshot_campers img {
+	border-radius: 50%;
+	width: 100%;
+}
+.headshot_text {
+	text-align: center;
+	color: #FFF;
+}
+
+/*FRIO 1 SLIDE*/
+#frio1Container {
+	width: 100%;
+	height: 70%;
+	margin-top: 1em;
+}
+#frio1LeftContainer {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	float:left;
+}
+#frio1Left1 {
+	width: 100%;
+	height: 50%;
+	background: url('frio_9.JPG');
+	background-position:left bottom;
+	background-size: cover;
+}
+#frio1Left2 {
+	width: 100%;
+	height: 50%;
+	background: url('frio_6.JPG'), url('frio_10.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#frio1Left2:hover {
+	background-position: 0px -900px, 0px 0px;
+}
+#frio1Right {
+	width: 60%;
+	height: 100%;
+	background: url('hearts.gif'), url('frio_3.JPG');
+	background-repeat: no-repeat;
+	background-position: -9000px 0px, left;
+	background-size: cover;
+	display: inline-block;
+	 -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+}
+#frio1Right:hover {
+	background-position: 70% 50%, left;
+	background-size: auto, cover;
+}
+
+/*FRIO 2 SLIDE*/
+#frio2Container {
+	width: 100%;
+	height: 70%;
+	margin-top: 1em;
+}
+#frio2Right {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	background: url('frio_1.JPG');
+	background-position: left bottom;
+	background-size: cover;
+}
+#frio2Right:hover {
+	background: url('frio_1_bw.jpg');
+	background-position: left bottom;
+	background-size: cover;
+}
+#frio2Left {
+	width: 50%;
+	height: 100%;
+	background: url('frio_2.JPG');
+	background-position: left bottom;
+	background-size: cover;
+	display: inline-block;
+}
+#frio2Left:hover {
+	background-image: url('frio_2_bw.jpg');
+	background-position: left bottom;
+	background-size: cover;
+}
+
+/*FRIO 3 SLIDE*/
+#frio3Container {
+	background-color: blue;
+	width: 100%;
+	height: 70%;
+	margin-top: 1em;
+}
+#frio3RightContainer {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+}
+#frio3Right1 {
+	width: 100%;
+	height: 50%;
+	background: url('frio_7.jpg');
+	background-position:left bottom;
+	background-size: cover;
+}
+#frio3Right2 {
+	width: 100%;
+	height: 50%;
+	background: url('frio_8.jpg');
+	background-size: cover;
+}
+#frio3Left {
+	width: 60%;
+	height: 100%;
+	background: url('frio_9.JPG');
+	background-position: left bottom;
+	background-size: cover;
+	display: inline-block;
+	float: left;
+}
+
+#thirdPage .slideHeader {
+	color: #EFEFEF;
+}
+#thirdPage .slideHeaderDate {
+	color: #222;
+	padding-left: 0.3em;
+}

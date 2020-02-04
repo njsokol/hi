@@ -1,0 +1,226 @@
+body {
+	font-family: 'Arvo', serif;
+}
+
+.aboutPageContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.workshopPageTitle {
+	color:#222;
+	font-size: 8em;
+	text-align: center;
+	padding: 0.3em 0 0.35em 0; 
+}
+.workshopRole {
+	color:#888;
+	font-size: 2em;
+	text-align: center;
+	padding: 0.2em;
+}
+.workshopContent {
+	padding: 1em;
+}
+#workshopAboutImage {
+	float: left;
+	display:block;
+}
+.workshopAbout {
+	font-size: 30px;
+	margin: 130px 0 0 500px;
+	color: #B5b5b5;
+}
+.colorOrange {
+	color: #EF6C11;
+}
+.mobileShowPageContainer {
+	clear: both;
+	background: url(dg-cage-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:960px;
+}
+.mobileShownInnerPageContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#mobileShowTitle {
+	font-size: 5em;
+	padding-top: 1.3em;
+	padding-bottom:0.2em;
+	color: #FFF;
+	text-shadow: 4px 4px 4px #111;
+	padding-left: 1em;
+}
+#mobileShow {
+	width:400px;
+	margin-left: 3.1em;
+}
+.designPageContainer {
+	clear: both;
+}
+.designInnerPageContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.designLeftPageTitle {
+	font-size: 4em;
+	color:#888;
+	padding-bottom:0.5em;
+	color: #EF6C11;
+	
+}
+.designRightPageTitle {
+	font-size: 4em;
+	color:#888;
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+	color: #EF6C11;
+}
+
+.designLeftContainer {
+	padding-top:5em;
+}
+.designRightContainer {
+	padding-top:5em;
+}
+.designRightContainer img {
+	width:100%;
+	max-width: 700px;
+	margin: 0 auto;
+	display:block;
+	padding-bottom: 5em;
+}
+.designLeftContainer img {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	display:block;
+}
+.codingPageContainer {
+	background-color: #EF6C11;
+	clear: both;
+}
+.codingInnerPage {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.codingInnerPage h1 {
+	font-size: 4em;
+	color: #FFF;
+	padding: 1em 0;
+}
+.codingInnerPage img {
+	display:block;
+	margin: 0 auto;
+	padding-bottom: 7em;
+}
+
+.workshopFooter {
+	clear:both;
+	height:300px;
+	background-color:#333;
+}
+.footerTitle {
+	padding-top:5em;
+	text-align:center;
+}
+.footerTitle a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 2em;
+}
+.footerTitle a:hover {
+	color: #AAA;
+}
+.footerBlurb  {
+	color: #FFF;
+	padding-top: 5em;
+	text-align:center;
+}
+.footerBlurb a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 641px) {
+
+.workshopPageTitle {
+    font-size: 3em;
+}
+.workshopRole {
+    font-size: 1em;
+}
+#workshopAboutImage {
+    width: 70%;
+    float: none;
+	display: block;
+	margin: 0 auto;
+}
+.workshopAbout {
+	font-size: 1em;
+	width: 82%;
+	margin: 0 auto;
+	line-height: 1.2em;
+	clear:both;
+	padding-bottom: 1em;
+}
+#mobileShowTitle {
+    font-size: 3em;
+    text-align: center;
+	width: 100%;
+	padding-left: 0;
+}
+#mobileShow {
+    margin-left: 0;
+    width: 100%;
+}
+.mobileShowPageContainer {
+    height: auto;
+    padding-bottom: 3em;
+}
+.designLeftContainer {
+    padding-top: 4em;
+}
+.designLeftPageTitle {
+    font-size: 3em;
+    text-align:center;
+}
+.designRightPageTitle {
+    font-size: 3em;
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 0.3em;
+}
+.designRightContainer img {
+	padding-bottom: 4em;
+}
+.codingInnerPage h1 {
+    font-size: 2.7em;
+    text-align: center;
+}
+.codingInnerPage img {
+	width: 85%;
+	padding-bottom: 5em;
+}
+.footerTitle {
+    padding-top: 4em;
+}
+.footerTitle a {
+	font-size: 1.5em;
+}
+.footerBlurb {
+    padding-top: 4em;
+    font-size: 0.8em;
+}
+.workshopFooter {
+	height: 220px;
+}
+
+}

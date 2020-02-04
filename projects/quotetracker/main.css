@@ -1,0 +1,202 @@
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#topContainer {
+	background-color:#767676;
+	height: 400px;
+	position: relative;
+	text-align:center;
+}
+#topContainer img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display:inline-block;
+	width: 400px;
+	margin-left:-200px;
+}
+#blueContainer {
+	background-color: #0096D6;
+	-webkit-box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    text-align: center;
+    color: #E5E8E8;
+    padding-bottom: 5em;
+}
+#blueContainer h1 {
+	font-size: 5em;
+	padding:1.5em 0 0.4em; 0;
+	font-weight: 300;
+}
+#blueInnerPage {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#qtBio {
+	max-width: 610px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	padding-bottom: 2em;
+}
+#qtRole {
+	padding-bottom: 2em;
+	font-size: 1.2em;
+	color: rgba(0, 52, 77, 0.41);
+}
+.iphoneImage img{
+	width: 500px;
+}
+#colorContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5em;
+}
+#colorContainer h1 {
+	font-size: 5em;
+	color: #767676;
+	padding-top: 1em;
+	margin-left: 1.7em;
+	padding-bottom: 0.4em;
+	text-align: left;
+	font-weight: 300;
+}
+#colorContainer img {
+	display:inline-block;
+}
+#fontContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5em;
+}
+#fontContainer h1 {
+	font-size: 5em;
+	color: #767676;
+	padding-top: 0.5em;
+	margin-left: 1.7em;
+	padding-bottom: 0.7em;
+	text-align: left;
+	font-weight: 300;
+}
+#fontContainer img {
+	display:inline-block;
+}
+#blueContainer2 {
+	background-color: #0096D6;
+	width: 100%;
+	padding-top: 5em;
+	-webkit-box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    box-shadow: inset 0 20px 20px -20px rgba(255,255,255,0.5);
+    text-align: center;
+    color: #E5E8E8;
+}
+#builtContainer {
+	width:100%;
+	max-width: 1000px;
+}
+#builtContainer h1 {
+	font-size: 5em;
+	margin-left: 1.7em;
+	padding-bottom: 0.8em;
+	text-align: left;
+	font-weight: 300;
+}
+#builtContainer {
+	display:inline-block;
+}
+#blueContainer2 p {
+	padding: 5em 0 2em 0;
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width: 641px) {
+
+#topContainer {
+	height: 250px;
+}
+#topContainer img {
+	left: bleh;
+	width: 80%;
+	margin-left: -40%;
+}
+#blueContainer {
+	z-index: 100;
+	position: relative;
+}
+#blueContainer h1 {
+    font-size: 3em;
+    padding: 1em 0em;
+    padding-bottom: 0.4em;
+    font-weight: 300;
+}
+#qtBio {
+    max-width: 85%;
+    text-align: left;
+    margin: 0px auto;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding-bottom: 2em;
+}
+#qtRole {
+	padding-bottom: 1em;
+	font-size: 1em;
+}
+.iphoneImage img {
+    width: 100%;
+}
+#colorContainer h1 {
+    font-size: 3em;
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 0.4em;
+    width: 100%;
+}
+#colorContainer img {
+    width: 100%;
+}
+#colorContainer {
+	padding-bottom: 4em;
+}
+#fontContainer h1 {
+    font-size: 3em;
+    padding-top: 0;
+    margin-left: 0;
+    padding-bottom: 0.4em;
+    width: 100%;
+	text-align: center;
+}
+#fontContainer img {
+    width: 100%;
+}
+#builtContainer h1 {
+    font-size: 3em;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.6em;
+}
+#builtContainer img {
+	width: 100%;
+}
+#blueContainer2 p {
+	font-size: 1em;
+}
+#blueContainer2 {
+	padding-top: 3em;
+}
+
+}

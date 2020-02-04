@@ -1,0 +1,113 @@
+html, body {
+  background-color: #0b1316;
+  color: rgb(236, 239, 232);
+  font-family: 'Galdeano', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.top-section {
+  height: 50vh;
+  width: 100%;
+  background: url('../images/elderwand.jpg');
+  background-size: cover;
+  background-position: 50% 99%;
+}
+h1 {
+  font-family: 'Satisfy', cursive; 
+  color: #84aba8;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.welcome {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #D4AF37;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.spanner {
+  padding: 3rem 0;
+}
+.spanner.primary {
+  background-color:#122b30;
+}
+.spanner.secondary {
+  background-color: #092025;
+}
+.spanner.tertiary {
+  background-color: #050708;
+}
+img.thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.left-side {
+  flex: 2;
+}
+.right-side {
+  flex: 1;
+  padding: 0 2rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.sign-off {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #D4AF37;
+}
+
+.bottom-section {
+  height: 40vh;
+  width: 100%;
+  background: url('../images/hogwarts-2.jpg');
+  background-size: cover;
+  background-position: 50% 99%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .welcome,
+  .sign-off {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+  .thumbnail {
+    max-width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  iframe {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+
+}

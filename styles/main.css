@@ -1,36 +1,48 @@
 html,
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    overflow: hidden;
+    background-color: #222;
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+#skills-container {
+    padding: 2rem 0 5rem 0;
+    text-align: center;
+}
+
+#skills-container ul {
+    padding-bottom: 2rem;
 }
 
 #game-header {
-    background-color: #0689ff;
+    width: 100%;
+    animation: colorChanger 30s infinite;
+    -webkit-animation: colorChanger 30s infinite;
+    transition: all 0.4s;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+@media (max-width : 800px) {
+    #game-header {
+        flex-direction: column;
+    }
 }
   
 #game-score {
     color: #FFF;
-    font-size: 2em;
+    font-size: 1.5rem;
     margin-left: 1rem;
-    flex: 1;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle;
 }
 
 #game-start-stop-button {
-    flex: 1;
-    height: 3em;
-    line-height: 3em;
-    vertical-align: middle;
-    text-align: center;
+    padding: 0.5rem 1.5rem;
     font-weight: 900;
     border-radius: 10px;
     color: #ff89ff;
     background-color: #FFF;
-    max-width: 8em;
     margin-right: 1rem;
 }
 
@@ -56,7 +68,7 @@ body {
 
 #game-speed-slider label {
     padding: 0 1em;
-    color: #FFF;
+    color: #222;
     font-weight: 700;
 }
 
@@ -65,3 +77,202 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+
+
+
+  /* Colors*/
+
+  .aqua {
+    color: #1ABC9C;
+  }
+
+  .green {
+    color: #2ECC71;
+  }
+
+  .blue {
+    color: #3498DB;
+  }
+
+  .purple {
+    color: #9B59B6;
+  }
+
+  .yellow {
+    color: #F1C40F;
+  }
+
+  .orange {
+    color: #E67E22;
+  }
+
+  .red {
+    color: #E74C3C;
+  }
+
+  .white {
+    color: #FFFFFF;
+  }
+
+  .gray {
+    color: #95A5A6;
+  }
+
+  @-webkit-keyframes colorChanger {
+    0% {
+      background-color: #E67E22;
+    }
+    16% {
+      background-color: #E74C3C;
+    }
+    34% {
+      background-color: #9B59B6;
+    }
+    51% {
+      background-color: #3498DB;
+    }
+    68% {
+      background-color: #2ECC71;
+    }
+    88% {
+      background-color: #F1C40F;
+    }
+    100% {
+      background-color: #E67E22;
+    }
+  }
+  /* Standard syntax */
+
+  @keyframes colorChanger {
+    0% {
+      background-color: #E67E22;
+    }
+    16% {
+      background-color: #E74C3C;
+    }
+    34% {
+      background-color: #9B59B6;
+    }
+    51% {
+      background-color: #3498DB;
+    }
+    68% {
+      background-color: #2ECC71;
+    }
+    88% {
+      background-color: #F1C40F;
+    }
+    100% {
+      background-color: #E67E22;
+    }
+  }
+
+
+
+
+  /************************************************************
+  ABOUT
+ ***********************************************************/
+
+ #aboutTextContainer {
+     padding: 5rem 0;
+ }
+
+  #about-review-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 0 auto;
+    background-color: #DDD;
+    padding: 2rem;
+  }
+@media (max-width : 800px) {
+    #about-review-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+  .about-review-text-container {
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px#ccc;
+  }
+
+  .about-review p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    font-weight: 200;
+    font-style: italic;
+    color: #656565;
+    margin-bottom: 0;
+  }
+
+  .about-reviewer {
+    padding-top: 1em;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: #555;
+  }
+
+  #experience {
+    color: #555;
+    padding: 4rem 0;
+  }
+
+  .experience-job .job-title {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+  }
+
+  /************************************************************
+  GLOBAL
+ ***********************************************************/
+
+  .inner-container {
+    max-width: 640px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  h1.section-title {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 0.75em;
+    color: #FAFAFA;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.75em;
+    color: #ccc;
+  }
+
+
+
+
+
+
+
+
+  #projects-container {
+      padding: 7rem 0 3rem 0;
+      text-align: center;
+  }
+
+  .code-link {
+    animation: colorChanger 15s infinite;
+    -webkit-animation: colorChanger 15s infinite;
+    transition: all 0.2s;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 0.5rem;
+  }
+
+  .code-project {
+      padding: 2rem 0;
+  }

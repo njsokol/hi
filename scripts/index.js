@@ -48,13 +48,12 @@ var Game = (function() {
 
 var Dot = function() {
   // Dot variables
-  this.size = randomNumber(10, 100);
+  this.size = randomNumber(50, 100);
   this.value = Math.abs(Math.floor(this.size / 10) - 10) + 1;
   render(this);
   
   function animateDot(dot) {
-    var headerHeight = document.getElementById('game-header').offsetHeight + 
-      document.getElementById('game-speed').offsetHeight;
+    var headerHeight = document.getElementById('game-header').offsetHeight;
     
     var top = headerHeight;
     var id = setInterval(frame, 5);
@@ -121,7 +120,10 @@ function changeGameSpeed(speed) {
 }
 
 function randomColor() {
-  return '#' + (Math.random().toString(16) + "000000").substring(2,8);
+//   return '#' + (Math.random().toString(16) + "000000").substring(2,8);
+  const colors = ["#1ABC9C", "#2ECC71", "#3498DB", "#9B59B6", "#F1C40F", "#E67E22" , "#E74C3C"];
+
+  return colors[Math.floor(Math.random()*colors.length)];
 }
 
 function randomNumber(min, max) {
@@ -151,3 +153,22 @@ function startStopGame() {
     }
   }
 }
+
+
+(function colorChanger() {
+    //AboutColorChanger
+    var colors = ['rgba(26, 188, 156, 0.3)', 'rgba(46, 204, 113, 0.3)', 'rgba(52, 152, 219, 0.3)', 'rgba(155, 89, 182, 0.3)', 'rgba(241, 196, 15, 0.3)', 'rgba(230, 126, 34, 0.3)', 'rgba(231, 76, 60, 0.3)'];
+    
+    //Assign Random Colors @ the start
+    const reviews = document.querySelectorAll(`.about-review-text-container`);
+
+    reviews.forEach(review => {
+        const color = Math.floor(Math.random() * colors.length);
+        review.style.backgroundColor = colors[color];
+
+        review.addEventListener("mouseover", () => {
+            const newColor = Math.floor(Math.random() * colors.length);
+            review.style.backgroundColor = colors[newColor];
+          });
+    })
+})();

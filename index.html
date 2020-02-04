@@ -1,35 +1,175 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Nathan Sokol</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/css-reset.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
+
 <body>
-  <header id="game-header">
-    <div id="game-score">Score: <span id="total-score">0</span></div>
-    <div id="game-start-stop-button" onclick="startStopGame()">Start</div>
-  </header>
-  <header id="game-speed">
-    <div id="game-speed-slider">
-      <label>Slow</label>
-      <input type="range" list="tickmarks" min="10" max="100" step="10" value="10" onchange="changeGameSpeed(this.value)">
-      <datalist id="tickmarks">
-        <option value="10"></option>
-        <option value="20"></option>
-        <option value="30"></option>
-        <option value="40"></option>
-        <option value="50"></option>
-        <option value="60"></option>
-        <option value="70"></option>
-        <option value="80"></option>
-        <option value="90"></option>
-        <option value="100"></option>
-      </datalist>
-      <label>Fast</label>
+    <!-- <header id="game-header">
+        <div id="game-score">Score: <span id="total-score">0</span></div>
+        <div id="game-speed-slider">
+            <label>Slow</label>
+            <input type="range" list="tickmarks" min="10" max="100" step="10" value="10"
+                onchange="changeGameSpeed(this.value)">
+            <datalist id="tickmarks">
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
+            </datalist>
+            <label>Fast</label>
+        </div>
+        <div id="game-start-stop-button" onclick="startStopGame()">Start</div>
+    </header> -->
+    <br />
+    <br />
+
+    <!-- About -->
+
+    <div id="aboutTextContainer" class="inner-container">
+        <h1 class="section-title">Hello World.</h1>
+        <p>
+            My name is <span class="blue">Nathan Sokol</span>. I'm a professional techie living in the b-e-a-utiful
+            <span class="orange">Austin, TX</span>. When I'm not working, designing, or developing, I like spending time
+            <span class="green">outdoors</span>, <span class="aqua">wood-working</span>,
+            <span class="purple">disc golfing</span> or hanging out with friends at the greenbelt.
+        </p>
+        <br />
+        <p>
+            I have a passion for design and the skills to turn them into reality. I enjoy the challenges of the <span
+                class="red">ever emerging technology stack</span> and work hard to keep consistent with <span
+                class="yellow">key design principles</span> to stay fluid and relevant.
+        </p>
     </div>
-  </header>
-  <script src="./index.js"></script>
+
+
+    <!-- SKILLS  -->
+    <div id="skills-container" class="inner-container">
+        <h2>Nutshell</h1>
+            <ul>
+                <li>React</li>
+                <li>NodeJS</li>
+                <li>React Native</li>
+            </ul>
+            <ul>
+                <li>Design Thinking</li>
+                <li>User Testing</li>
+                <li>Usability</li>
+                <li>Accessibility</li>
+            </ul>
+            <ul>
+                <li>DevOps</li>
+                <li>Jenkins + Groovy</li>
+                <li>Python</li>
+            </ul>
+    </div>
+
+
+    <div id="about-review-container">
+        <div class="about-review">
+            <div class="about-review-text-container">
+                <p>
+                    "Nathan developed and supported the Squad Health Check app and was the lead developer on the Cloud
+                    Engineering InfoHub. He designed and implemented the needed features based on stakeholder feedback.
+                    Nathan cross-trained others on the team to enable them to improve their development skills and
+                    deliver projects they were working on."
+                </p>
+                <div class="about-reviewer">Jan Acosta - IBM
+                    <br />DevOps Transformation Manager</div>
+            </div>
+        </div>
+        <div class="about-review">
+            <div class="about-review-text-container">
+                <p>
+                    "I hired Nathan to work at IBM. It was easily one of my best hiring decisions. Nathan is an
+                    outstanding developer and designer. He has an outstanding work ethic and an attention to detail that
+                    immediately distinguishes him from his peers. If you need something done right and on time, you go
+                    to Nathan. On top of all of that, he's a great team player. Everybody likes Nathan and he helps
+                    bring out the best in others. If you get the chance to hire him, you should."
+                </p>
+                <div class="about-reviewer">Jim Jones - IBM
+                    <br />Cloud TaaS Manager</div>
+            </div>
+        </div>
+        <div class="about-review">
+            <div class="about-review-text-container">
+                <p>
+                    "Nathan was assigned several tasks during his time at Hewlett Packard related to code refactoring,
+                    software configuration management, database migration, and build automation. Not only did he exceed
+                    expectations of what he was asked to deliver, he exemplified organizational agility and how to solve
+                    complex problems in an Enterprise Application environment. The hands-on experience and his ability
+                    to work in a high-paced environment puts him at a level over and above his peers. For that reason, I
+                    would recommend him for any future opportunity or endeavor"
+                </p>
+                <div class="about-reviewer">Michael Seiden - HP
+                    <br />Software Development Engineer</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects-container" class="inner-container">
+        <h1 class="section-title">Projects</h1>
+        <div class="code-project">
+            <div class="code-project-desc">
+                <h2 class="purple">Infohub</h2>
+                <p>
+                    Transforming IBM to be faster, more data driven, and agile takes a lot of work. At the center of
+                    this effort, the Infohub provided the information needed by all of Watson and Cloud Platform
+                    they needed to do their jobs.
+                    <br>
+                    <a href="projects/infohub/" target="_blank" class="code-link">Explore</a>
+                </p>
+            </div>
+            <div class="code-project-image">
+                <img src="images/infohub-thumbnail.jpg" alt="">
+            </div>
+        </div>
+        <div class="code-project">
+            <div class="code-project-desc">
+                <h2 class="red">DG Extreme</h2>
+                <p>
+                    A truly free disc golf scoring application that is available everywhere and to everyone. This
+                    accuracy sport contains various courses and variable difficulty. Track your highest score,
+                    average score and even mock your buddies +8.
+                    <br>
+                    <a href="projects/dgextreme/" target="_blank" class="code-link">Explore</a>
+                </p>
+            </div>
+            <div class="code-project-image">
+                <img src="images/dgextreme-thumbnail.png" alt="">
+            </div>
+        </div>
+        <div class="code-project">
+            <div class="code-project-desc">
+                <h2 class="blue">QuoteTracker</h2>
+                <p>
+                    HPFS Asset Management Quote Tracker application provides services to AM business to track
+                    Pre-Owned quotes by Quote ID or by Customer and pull up the quote information with product
+                    details.
+                    <br>
+                    <a href="projects/quotetracker/" target="_blank" class="code-link">Explore</a>
+                </p>
+            </div>
+            <div class="code-project-image">
+                <img src="images/quotetracker-thumbnail.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="scripts/index.js"></script>
 </body>
+
 </html>

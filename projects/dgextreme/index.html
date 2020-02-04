@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nathan Sokol</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="aboutPageContainer">
+		<div>
+			<h1 class="workshopPageTitle">dgextreme</h1>
+			<h2 class="workshopRole">Lead UX Designer. Lead UI Developer.</h2>
+			<h2 class="workshopRole">Graphic Artist. Art Direction.</h2>
+		</div>
+		<div class="workshopContent">
+			<img id="workshopAboutImage" src="cage2.png" alt="cage" />
+			<div class="workshopAbout">
+				A truly <span class="colorOrange">free</span> disc golf scoring application that is available everywhere and to everyone. <br /> <br />This accuracy sport explores various courses and variable difficulty. Track your highest score, average score and even mock your buddies <span class="colorOrange">+8</span>. 
+			</div>
+		</div>
+	</div>
+	<div class="mobileShowPageContainer">
+		<div class="mobileShownInnerPageContainer">
+			<h1 id="mobileShowTitle">Click the Phone.</h1>
+			<img id="mobileShow" src="mobile_SS/login.png" alt="mobile_SS" />
+		</div>
+	</div>
+	<div class="designPageContainer">
+		<div class="designInnerPageContainer">
+			<div class="designLeftContainer">
+				<h1 class="designLeftPageTitle">Color Specs</h1>
+				<img id="" src="palette.png" alt="cage" />
+			</div>
+			<div class="designRightContainer">
+				<h1 class="designRightPageTitle">Textuality</h1>
+				<img id="" src="fonts.png" alt="cage" />
+			</div>
+		</div>
+	</div>
+	<div class="codingPageContainer">
+		<div class="codingInnerPage">
+			<h1 class="codingTitle">Hand Coded</h1>
+			<img src="coding.png" alt="coding">
+		</div>
+	</div>
+	<div class="workshopFooter">
+		<h3 class="footerTitle">
+			<a href="http://www.dgextreme.com">Visit the Site.</a>
+		</h3>
+		<h3 class="footerBlurb">
+			This page designed and developed by <a href="http://www.nathansokol.com"><b class="colorOrange">ME</b></a>
+		</h3>
+	</div>
+<script>
+var mobile_SS = ["login.png", "home.png", "course.png", "course2.png", "players.png", "play1.png", "profile.png"];
+var showCounter = 0;
+$(document).ready(function(){
+	$('#mobileShow').on('click', function(){
+		showCounter++;
+		if(showCounter == 7) {
+			showCounter = 0;
+		}
+		var src = "mobile_SS/" + mobile_SS[showCounter];
+		$('#mobileShow').attr('src', src);
+
+	});
+});
+</script>
+</body>
+</html>

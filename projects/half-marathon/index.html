@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>MTP Half-Marathon</title>
+    <!--jQuery-->
+    <script src="lib/jquery-2.1.3.min.js"></script>
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <!--GoogleFonts-->
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body ng-app="halfmarathon">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MTP Half Marathon</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Events">Events</a></li>
+                        <li><a href="#Voting">Voting</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--MakeRoomForNav-->
+        <div id="Home" style="height:6em;"></div>
+        <!--HomePage-->
+        <div class="jumbotron homeJumbo">
+            <div class="container">
+                <h1>Let's get pumped!</h1>
+                <p>Time to get off your lazy butt and train up. With only a few short months until the <a href="http://youraustinmarathon.com/">Austin Half-Marathon</a>, training starts now!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="" class="thumbnail">
+                    <img src="images/run1.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="" class="thumbnail">
+                    <img src="images/run2.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="" class="thumbnail">
+                    <img src="images/run3.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="" class="thumbnail">
+                    <img src="images/run4.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <!--Events-->
+        <!--MakeRoomForNav-->
+        <div id="Events" style="height:3em;"></div>
+        <div class="page-header">
+            <i class="fa fa-calendar fa-3x" style="display:inline-block"></i>
+            <h1>Events <small>when is all this going down?</small></h1>
+        </div>
+        <div style="margin-top:4em;"></div>
+        <h2>Test-Run #1 - <span style="color: #337ab7">July 18th</span></h2>
+        <p class="eventDescription">A shorter run through Brushy Creek trails that will present a first step in the long journey to the Austin Half Marathon in February. There will be an after party at the Ressler residence so bring some brewskis to cool off with after the run!</p>
+        <br/>
+        <div class="row">
+            <div class="col-sm-6 col-md-12">
+                <div class="thumbnail">
+                    <img src="lib/images/halfmarathonmap.jpg" alt="map">
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <h2>Running Town Lake with Maggie - <span style="color: #337ab7">Sundays</span></h2>
+        <p class="eventDescription">Every Sunday there is a group who will be running around Town Lake. Text Maggie with any questions or for more details.</p>
+        <br />
+        <div class="row">
+            <div class="col-xs-6 col-md-7">
+                <a href="http://www.mappery.com/maps/Town-Lake-Map.jpg" class="thumbnail">
+                    <img src="images/townlake1.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-5">
+                <a href="" class="thumbnail">
+                    <img src="images/townlake2.jpg" alt="100%x180" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <!--Voting-->
+        <!--MakeRoomForNav-->
+        <div id="Voting" style="height:3em;"></div>
+        <div ng-controller="votingController as voting">
+            <div class="page-header">
+                <i class="fa fa-trophy fa-3x" style="display:inline-block"></i>
+                <h1>Voting <small>who is going to win?</small></h1>
+            </div>
+            <div style="margin-top:4em;"></div>
+            <form ng-submit="voteFor()">
+                <span>Pick your winner: </span>
+                <select class="voteForDropdown" ng-model="selectPeople" ng-options="p.name for p in people">
+                </select>
+                <input type="submit" id="voteSubmit" value="Vote" />
+            </form>
+            <br />
+            <ul class="votingUL">
+                <li ng-repeat="p in people">
+                    {{p.name}} : <span style="color:#AAA; font-weight:300">{{p.votes}}</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{p.votes}}" aria-valuemin="0" aria-valuemax="{{totalVotes}}" style="width: {{(p.votes/totalVotes)*100 | number:0}}%;">{{(p.votes/totalVotes)*100 | number:0}}%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--SpaceOutThatHoe-->
+    <div style="margin-top:10%;"></div>
+    <footer>
+        <div class="container">
+            <i class="fa fa-twitter fa-4x"></i>
+            <a href="https://twitter.com/mtpweekend">
+                <div class="footTwitterDesc">Follow us on Twitter!</div>
+            </a>
+            <h2 class="text-right">Or be awesome and email <span style="color:#FFF">@</span> mtpweekend@gmail.com</h1>
+				<!--SpaceOutThatHoe--><div style="margin-top:10%;"></div>
+
+				<p class="text-center">Smell ya later folks!</p>
+				<p class="text-center">&copy; Copyright MTPWeekend 2015</p>
+			</div>
+		</footer>
+
+	
+	<!--Load Javascript Files-->
+	<script src="js/main.js"></script>
+</body>
+</html>

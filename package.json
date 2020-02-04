@@ -1,9 +1,9 @@
 {
 	"name": "hi",
 	"version": "1.0.0",
-	"description": "on the hunt for minecraft diamonds",
+    "description": "on the hunt for minecraft diamonds",
 	"scripts": {
-		"start": "nodemon server.js"
+		"start": "nodemon -e html,css,js server.js"
 	},
 	"dependencies": {
 		"express": "4.17.1",
